@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use App\Repository\BookRepository;
+use DateTimeImmutable;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: BookRepository::class)]
@@ -29,7 +30,13 @@ class Book
     private $publishedAt;
 
     #[ORM\Column(type: 'boolean')]
-    private $isActive;
+    private $isActive = false;
+
+    public function __construct()
+    {
+        $date = new DateTimeImmutable();
+        $this->createdAt = $date;
+    }
 
     public function getId(): ?int
     {

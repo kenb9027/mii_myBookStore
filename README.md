@@ -5,14 +5,34 @@ Dependances Front
 - Bootstrap
 
 Entité
--> book - id - title - description - price - cover - createdAt (valeur par defaut = date de l'insertion) - publishedAt - isActive (defaut = false)
--> author - id - firstname - lastname - fullname (genaré automatiquement = firstname + lastname) - gender (M, F, N)
--> category - id - name - description - color (7 caractères) - illustration
+- book 
+    - id 
+    - title 
+    - description 
+    - price 
+    - cover 
+    - createdAt (valeur par defaut = date de l'insertion) 
+    - publishedAt 
+    - isActive (defaut = false)
+
+- author 
+    - id 
+    - firstname 
+    - lastname 
+    - fullname (genaré automatiquement = firstname + lastname) 
+    - gender (M, F, N)
+
+- category 
+    - id 
+    - name 
+    - description 
+    - color (7 caractères) 
+    - illustration
 
 Formulaire
--> BookType
--> AuthorType
--> CategoryType
+- BookType
+- AuthorType
+- CategoryType
 
 Routes
 accueil /
