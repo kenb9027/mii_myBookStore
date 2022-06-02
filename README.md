@@ -1,15 +1,19 @@
 Nouveau Projet Symfony 5.4
--> MyBookStore
+
+- MyBookStore
 Dependances Front
--> Bootstrap
+- Bootstrap
+
 Entité
 -> book - id - title - description - price - cover - createdAt (valeur par defaut = date de l'insertion) - publishedAt - isActive (defaut = false)
 -> author - id - firstname - lastname - fullname (genaré automatiquement = firstname + lastname) - gender (M, F, N)
 -> category - id - name - description - color (7 caractères) - illustration
+
 Formulaire
 -> BookType
 -> AuthorType
 -> CategoryType
+
 Routes
 accueil /
 Liste des livres /books
@@ -27,6 +31,7 @@ Details d'une catégorie /category/{id}
 Ajouter une catégorie /category
 Editer une catégorie /category/{id}/edit
 Supprimer une catégorie /category/{id}/delete
+
 ////////////////////////////////////////////////
 -> Relations entre les entités
 -> EntityType et CollectionType dans les formulaires
