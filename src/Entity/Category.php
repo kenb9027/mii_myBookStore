@@ -20,7 +20,7 @@ class Category
     private $description;
 
     #[ORM\Column(type: 'string', length: 7)]
-    private $color;
+    private $color = '#f2f2f2';
 
     #[ORM\Column(type: 'string', length: 180, nullable: true)]
     private $illustration;

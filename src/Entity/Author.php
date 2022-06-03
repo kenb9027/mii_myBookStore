@@ -61,7 +61,7 @@ class Author
 
     public function setFullname(string $fullname): self
     {
-        $this->fullname = $fullname;
+        $this->fullname = $this->getFirstname() . ' ' . $this->getLastname();
 
         return $this;
     }

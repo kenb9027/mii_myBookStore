@@ -32,6 +32,9 @@ class Book
     #[ORM\Column(type: 'boolean')]
     private $isActive = false;
 
+    #[ORM\Column(type: 'float')]
+    private $price;
+
     public function __construct()
     {
         $date = new DateTimeImmutable();
@@ -111,6 +114,18 @@ class Book
     public function setIsActive(bool $isActive): self
     {
         $this->isActive = $isActive;
+
+        return $this;
+    }
+
+    public function getPrice(): ?float
+    {
+        return $this->price;
+    }
+
+    public function setPrice(float $price): self
+    {
+        $this->price = $price;
 
         return $this;
     }
